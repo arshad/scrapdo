@@ -1,8 +1,8 @@
 /**
- * Export doscrapper
+ * Export Scrapdo
  */
 
-exports = module.exports = require('./lib/doscrapper');
+exports = module.exports = require('./lib/scrapdo');
 
 /*
   Export the version

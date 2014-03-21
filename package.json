@@ -1,5 +1,5 @@
 {
-  "name": "doscrapper",
+  "name": "scrapdo",
   "version": "0.0.1",
   "description": "Drupal.org scrapper",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:arshad/doscrapper.git"
+    "url": "git@github.com:arshad/scrapdo.git"
   },
   "keywords": [
     "drupal",
