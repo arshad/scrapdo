@@ -1,6 +1,6 @@
 {
   "name": "scrapdo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Drupal.org scrapper",
   "main": "index.js",
   "scripts": {
