@@ -15,5 +15,9 @@
     "scrapper"
   ],
   "author": "Arshad Chummun",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "request": "~2.34.0",
+    "cheerio": "~0.13.1"
+  }
 }
