@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Scrapdo : Drupal.org Scrapper" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Scrapdo</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/arshad/scrapdo">View on GitHub</a>
+
+          <h1 id="project_title">Scrapdo</h1>
+          <h2 id="project_tagline">Drupal.org Scrapper</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/arshad/scrapdo/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/arshad/scrapdo/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="scapdo" class="anchor" href="#scapdo"><span class="octicon octicon-link"></span></a>Scapdo</h1>
+
+<p>Scrapdo is a scrapper for Drupal.org built with node.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>You can install scrapdo using npm.</p>
+
+<pre><code>npm install scrapdo
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>var scrapdo = require('scrapdo');
+</code></pre>
+
+<h3>
+<a name="user" class="anchor" href="#user"><span class="octicon octicon-link"></span></a>User</h3>
+
+<h4>
+<a name="get-user-info" class="anchor" href="#get-user-info"><span class="octicon octicon-link"></span></a>Get user info</h4>
+
+<pre><code>scrapdo.getUserData('info', { uid: '571032' }, function(data) {
+    console.log(data);
+});
+</code></pre>
+
+<p>Output:</p>
+
+<pre><code>{ 
+    Username: 'arshadcn',
+    full_name: 'Arshad Chummun',
+    my_website: 'http://arshad.github.io',
+    gender: 'male',
+    country: '&lt;not specified&gt;',
+    irc_nick: 'arshadcn',
+    twitter_url: 'http://twitter.com/arshadcn' 
+}
+</code></pre>
+
+<h3>
+<a name="get-user-projects" class="anchor" href="#get-user-projects"><span class="octicon octicon-link"></span></a>Get user projects</h3>
+
+<pre><code>scrapdo.getUserData('projects', { uid: '571032' }, function(data) {
+    console.log(data);
+});
+</code></pre>
+
+<p>Output:</p>
+
+<pre><code>radix: { title: 'Radix', name: 'radix' },
+restaurant: { title: 'Restaurant', name: 'restaurant' },
+andromeda: { title: 'Andromeda', name: 'andromeda' },
+andromeda_slideshow: { title: 'Andromeda Slideshow', name: 'andromeda_slideshow' },
+restaurant_theme: { title: 'Restaurant Theme', name: 'restaurant_theme' },
+restaurant_base: { title: 'Restaurant Base', name: 'restaurant_base' },
+</code></pre>
+
+<h3>
+<a name="project" class="anchor" href="#project"><span class="octicon octicon-link"></span></a>Project</h3>
+
+<h3>
+<a name="get-project-info" class="anchor" href="#get-project-info"><span class="octicon octicon-link"></span></a>Get project info</h3>
+
+<pre><code>scrapdo.getProjectData('info', { name: 'views' }, function(data) {
+  console.log(data);
+});
+</code></pre>
+
+<p>Output:</p>
+
+<pre><code>{
+    title: 'Views',
+    nid: '38878',
+    author: { username: 'merlinofchaos', uid: '26979' },
+    screenshots: [],
+    maintainers:
+        [ 
+            { username: 'tim.plunkett', uid: '241634', commits: '580' },
+            { username: 'dawehner', uid: '99340', commits: '2916' },
+            { username : 'damiankloip', uid: '1037976', commits: '353' },
+            { username: 'dww', uid: '46549', commits: '28' },
+            { username: 'xjm', uid: '65776', commits: '78' } 
+        ] 
+}
+</code></pre>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Scrapdo maintained by <a href="https://github.com/arshad">arshad</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
