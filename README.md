@@ -1,4 +1,4 @@
-Scapdo
+Scrapdo
 =========
 
 Scrapdo is a scrapper for Drupal.org built with node.
