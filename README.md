@@ -19,14 +19,14 @@ Usage
 
 #### Get user info
 
-    scrapdo.getUserData('info', { uid: '571032' }, function(data) {
+    scrapdo.getUserData('info', { username: 'arshadcn' }, function(data) {
         console.log(data);
     });
     
 Output:
 
     { 
-        Username: 'arshadcn',
+        username: 'arshadcn',
         full_name: 'Arshad Chummun',
         my_website: 'http://arshad.github.io',
         gender: 'male',
@@ -38,19 +38,40 @@ Output:
     
 ### Get user projects
 
-    scrapdo.getUserData('projects', { uid: '571032' }, function(data) {
+    scrapdo.getUserData('projects', { username: 'arshadcn' }, function(data) {
         console.log(data);
     });
     
 Output:
 
-    radix: { title: 'Radix', name: 'radix' },
-    restaurant: { title: 'Restaurant', name: 'restaurant' },
-    andromeda: { title: 'Andromeda', name: 'andromeda' },
-    andromeda_slideshow: { title: 'Andromeda Slideshow', name: 'andromeda_slideshow' },
-    restaurant_theme: { title: 'Restaurant Theme', name: 'restaurant_theme' },
-    restaurant_base: { title: 'Restaurant Base', name: 'restaurant_base' },
-    
+    [
+      {
+        title: "Radix",
+        name: "radix",
+        commits: "275"
+      },
+      {
+        title: "Restaurant",
+        name: "restaurant",
+        commits: "205"
+      },
+      {
+        title: "Andromeda",
+        name: "andromeda",
+        commits: "64"
+      },
+      {
+        title: "Andromeda Slideshow",
+        name: "andromeda_slideshow",
+        commits: "47"
+      },
+      {
+        title: "Restaurant Base",
+        name: "restaurant_base",
+        commits: "44"
+      }
+    ]
+
 ### Project
 
 ### Get project info
