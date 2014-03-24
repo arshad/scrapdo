@@ -3,6 +3,13 @@ Scapdo
 
 Scrapdo is a scrapper for Drupal.org built with node.
 
+Examples
+--------------
+
+(do-api)[http://github.com/arshad/do-api]: An API for Drupal.org built with scrapdo and Express.
+(do-stats)[http://do-stats.herokuapp.com]: Statistics for Drupal.org built with do-api, scrapdo and Express.
+
+
 Installation
 --------------
 
